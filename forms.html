@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form Page
+        </title>
+    </head>
+    <body>
+        <form>
+            <label for="fname">First name</label>
+            <input type="text" name="fname">
+            <br>
+            <label for="lname">Last name</label>
+            <input type="text" name="lname">
+            <br>
+            <label for="browser">Choose your favourite language:</label>
+            <input list="languages" name="language">
+            <datalist id="languages">
+                <option value="Java">
+                <option value="PHP">
+                <option value="Phyton">
+                <option value="C#">
+            </datalist>
+            <br>
+            <input type="submit" name="Submit">
+            <br>
+            <button>Reset</button>
+        </form>
+    </body>
+</html>
