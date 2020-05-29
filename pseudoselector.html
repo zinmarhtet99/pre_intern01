@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo Selector</title>
+        <style>
+             button:hover{
+                background-color: green;
+            }
+            button{
+                width: 100px;
+                height: 50px;
+                background-color: mediumblue;
+                color: white;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <form>
+            <div>
+                <input type="text" name="first nmae" placeholder="first name"><br>
+                <input type="text" name="last name" placeholder="last name"> <br>
+                <input type="number" name="age" placeholder="age"> <br>
+                <input type="password" name="password" placeholder="password">
+            </div>
+            <div>
+                Favourite Language:
+                <input type="radio" name="language" value="java">Java
+                <input type="radio" name="language" value="php">Php
+                <input type="radio" name="language" value="python">Python
+                <input type="radio" name="language" value="C#">C# 
+            </div>
+            <div>
+                <input list="languages" name="language" placeholder="language">
+                <datalist id="languages">
+                    <option value="Burmese">
+                    <option value="English">
+                    <option value="United Kingdon">
+                    <option value="Korean">
+                    <option value="Chinese">
+                    <option value="Japanese">
+                </datalist>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+    </body>
+</html>
