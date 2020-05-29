@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attribute Selector</title>
+        <style>
+            input[type=text]{
+                background-color: royalblue;
+            }
+            input[type=number]{
+                background-color: yellow;
+            }
+            input[type=password]{
+                background-color: magenta;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <form>
+           <div>
+               <input type="text" name="first nmae" placeholder="first name"><br>
+               <input type="text" name="last name" placeholder="last name"> <br>
+               <input type="number" name="age" placeholder="age"> <br>
+               <input type="password" name="password" placeholder="password">
+           </div>
+           <div>
+               Favourite Language:
+               <input type="radio" name="language" value="java">Java
+               <input type="radio" name="language" value="php">Php
+               <input type="radio" name="language" value="python">Python
+               <input type="radio" name="language" value="C#">C# 
+           </div>
+           <div>
+               <input list="languages" name="language" placeholder="language">
+               <datalist id="languages">
+                   <option value="Burmese">
+                   <option value="English">
+                   <option value="United Kingdon">
+                   <option value="Korean">
+                   <option value="Chinese">
+                   <option value="Japanese">
+               </datalist>
+           </div>
+           <div>
+               <button>Submit</button>
+           </div>
+        </form>            
+    </body>
+</html>
