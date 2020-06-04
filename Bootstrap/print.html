@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Responsive</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @media print{
+                .screenonly{
+                    display: none;
+                }
+            }
+            @media(min-width: 600px){
+                p{
+                    background-color: blue;
+                }
+            }
+            @media(max-width: 599px){
+                p{
+                    background-color: red;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eum autem similique nobis molestias sunt dolore ab provident velit animi, consectetur omnis, magni dolor molestiae id delectus voluptas enim aliquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo expedita iure dolores autem illum odio veritatis nam delectus modi inventore unde, non enim fuga ipsum iste incidunt facere excepturi magni?</p>
+            <p class="screenonly">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nam provident dolor. Vel voluptatem sit ullam, dignissimos perspiciatis, quos labore porro, qui hic minima earum repellat aperiam totam quibusdam ratione?</p>
+
+        </div>
+    </body>
+</html>
