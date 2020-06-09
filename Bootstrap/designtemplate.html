@@ -47,10 +47,14 @@
                 grid-template-columns:auto auto auto;
                 
         }
+        .bottom{
+            padding-top: 20px;
+            background-color: darkturquoise;
+        }
     </style>
     <body>
         <header class="header-area">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top text justified center">
                 <div class="container">
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -77,25 +81,25 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, laudantium nam eveniet magni consectetur ipsam architecto molestiae aspernatur assumenda facilis consequatur veritatis qui cumque, quia nulla laborum omnis similique. Ex.</p>
             </div>
             <div class="body">
-               <div class="col-lg-3 col-md-6" style="text-align: center;">
+               <div class="col-3" style="text-align: center;">
                 <i class="fa fa-newspaper-o" style="font-size: 50px;"></i>
                 <h3>Lorem ipsum</h3>
                 <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio nemo, omnis atque facere quos, numquam vitae nihil laboriosam architecto odio laudantium earum necessitatibus totam quasi eaque similique harum provident cumque.</p>
                 <p><a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-secondary">Learn More »</a></p>
                 </div>
-                <div class="col-lg-3 col-md-6" style="text-align: center;">
+                <div class="col-3" style="text-align: center;">
                     <i class="fa fa-film" style="font-size: 50px;"></i>
                     <h3>Lorem ipsum</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio nemo, omnis atque facere quos, numquam vitae nihil laboriosam architecto odio laudantium earum necessitatibus totam quasi eaque similique harum provident cumque.</p>
                     <p><a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-secondary">Learn More »</a></p>
                 </div>
-                <div class="col-lg-3 col-md-6" style="text-align: center;">
+                <div class="col-3" style="text-align: center;">
                     <i class="fa fa-heart" style="font-size: 50px;"></i>
                     <h3>Lorem ipsum</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio nemo, omnis atque facere quos, numquam vitae nihil laboriosam architecto odio laudantium earum necessitatibus totam quasi eaque similique harum provident cumque.</p>
                     <p><a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-secondary">Learn More »</a></p>
                 </div>
-                <div class="col-lg-3 col-md-6" style="text-align: center;">
+                <div class="col-3" style="text-align: center;">
                     <i class="fa fa-vcard" style="font-size: 50px;"></i>
                     <h3>Lorem ipsum</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio nemo, omnis atque facere quos, numquam vitae nihil laboriosam architecto odio laudantium earum necessitatibus totam quasi eaque similique harum provident cumque.</p>
@@ -148,40 +152,55 @@
             </div>
            </div>
         </div>
-        <div class="container-fluid">
+        
+        <div class="bottom">
             <div class="container">
-                <div class="btitle">
-                    <h2>SEND US A MESSAGE</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 style="text-align: center;">SEND US A MESSAGE</h2>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                    
+                <div class="row">
+                    
+                   
+                    <div class="input-group">
+                        <div class="col-4 ">
+                            <input type="text" aria-label="First name" class="form-control" placeholder="name">
+                        </div>
+                        <div class="col-4">
+                            <input type="text" aria-label="Last name" class="form-control" placeholder="name">
+                        </div>
+                        <div class="col-4">
+                            <input type="text" aria-label="Last name" class="form-control" placeholder="name">
+                        </div>
+                        
+                    </div>
+                    <div class="input-group">
+                        <div class="col-4">
+                            <input type="text" aria-label="First name" class="form-control" placeholder="name">
+                        </div>
+                        <div class="col-4">
+                            <input type="text" aria-label="Last name" class="form-control" placeholder="name">
+                        </div>
+                        <div class="col-4">
+                            <input type="text" aria-label="Last name" class="form-control" placeholder="name">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="col-12">
+                            <textarea name="message" class="form-control" >Message</textarea>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="col-4">
+                            <button class="btn btn-warning btn-lg form-control">Submit</button>
+                        </div>
+        
+                    </div>
+                    
                 </div>
-                
-                 <div class="containerone">
-                    <div class="grid-item">
-                        <input type="text" placeholder="FIRST NAME" name="fname" style="background-color: transparent;">
-                     </div>
-                     <div class="grid-item">
-                        <input type="text" placeholder="LAST NAME" name="lname" style="background-color: transparent;">
-                     </div>
-                     <div class="grid-item">
-                        <input type="email" placeholder="EMAIL ADDRESS" name="email" style="background-color: transparent;">
-                     </div>
-                     <div class="grid-item">
-                        <input type="number" name="phone" placeholder="PHONENO" style="background-color: transparent;">
-                     </div>
-                     <div class="grid-item">
-                        <input type="text" name="address" placeholder="ADDRESS" style="background-color: transparent;">
-                     </div>
-                     <div class="grid-item">
-                        <input type="text" name="name" placeholder="DECRYPT" style="background-color: transparent;">
-                     </div>
-                </div>     
-                 
-                 
-                    <textarea name="message"  cols="10" rows="10" style="background-color: white;height: 50px;width: 950px;margin-left: 90px;"></textarea>
-                
-                    <input type="buttom" class="btn btn-warning" name="send" placeholder="send" style="background-color: yellow;width: 300px;margin-left: 90px;">
-                 
             </div>
         </div>
+        
     </body>
 </html>
