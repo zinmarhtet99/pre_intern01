@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Website
+        </title>
+        <script>
+            document.addEventListener('DOMContentLoaded',function () {
+                document.querySelector('#red').onclick=function(){
+                    document.querySelector('#red').style.background='red';
+                    document.querySelector('#red').style.color='yellow';
+                };  
+
+                document.querySelector('#yellow').onclick=function(){
+                    document.querySelector('#yellow').style.background='yellow';
+                    document.querySelector('#yellow').style.color='green';
+                };  
+
+                document.querySelector('#green').onclick=function(){
+                    document.querySelector('#green').style.background='green';
+                    document.querySelector('#green').style.color='red';
+                };  
+            });
+
+        </script>
+    </head>
+    <body>
+        <button id="red">RED</button>
+        <button id="yellow">YELLOW</button>
+        <button id="green">GREEN</button>
+    </body>
+</html>
