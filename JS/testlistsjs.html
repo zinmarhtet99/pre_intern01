@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Website
+        </title>
+        <script>
+            document.addEventListener('DOMContentLoaded',()=> {
+                document.querySelector('#todo-list').onsubmit=()=>{
+
+                    const li=document.createElement('li');
+                    li.innerHTML=document.querySelector('#tasks').value;
+                    document.querySelector('#lists').append(li);
+
+                    document.querySelector('#tasks').value="";
+
+                    return false;
+
+                };
+                document.querySelector('#tasks').onclick=()=>{
+                    document.querySelector('#submit').disabled=false;
+                };
+            
+                
+            });
+        </script>
+    </head>
+    <body>
+        <h1>To Do Lists</h1>
+        <ul id="lists"> 
+
+        </ul>
+        <form id="todo-list">
+            <input type="text" id="tasks" placeholder="Added to do list" autofocus autocomplete="off" >
+            <input type="submit" disabled id="submit">
+        </form>
+    </body>
+</html>
