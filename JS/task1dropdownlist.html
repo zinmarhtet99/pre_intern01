@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Website
+        </title>
+        <script>
+            document.addEventListener('DOMContentLoaded',function () {
+               document.querySelector('#colors').onclick=function(){
+                document.querySelector('#title').style.color='red';
+               } ;
+            });
+        </script>
+    </head>
+    <body>
+        <h1 id="title">Hello! Welcome to Our Preintern Group.</h1>
+        <select name="colors" id="colors">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="yellow">Yellow</option>
+          </select>
+    </body>
+</html>
